@@ -7,15 +7,23 @@ class triggerImmediate extends Trigger {
     super(chain, params);
   }
 
-  start() {
+  async start() {
     // Start Chain:
-    const checkCalendar = true;
-    const inputValues = [params?.input_values];
-    const customValues = params?.custom_values;
+    const checkCalendar = false;
+    const inputValues = [this.params?.input_values];
+    const customValues = this.params?.custom_values;
+    const sleep = require('util').promisify(setTimeout);
 
-    this.startChain(checkCalendar, inputValues, customValues).catch(err => {
-      _this.logger.error('startChain error (triggerImmediate):', err);
-    });
+    // Wait Plan is ready:
+    while(!this.runtime.plan){
+      await sleep(5);
+    }
+
+    try {
+      this.startChain(checkCalendar, inputValues, customValues);
+    } catch (err) {
+      this.logger.error('StartChain error (triggerImmediate):', err);
+    }
   }
 }
 
