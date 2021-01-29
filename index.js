@@ -15,7 +15,7 @@ class triggerImmediate extends Trigger {
     const sleep = require('util').promisify(setTimeout);
 
     // Wait Plan is ready:
-    while(!this.runtime.plan){
+    while (!this.runtime.plan) {
       await sleep(5);
     }
 
