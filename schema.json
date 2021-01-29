@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "@runnerty-trigger-immediate",
+  "definitions": {
+    "config": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "pattern": "@runnerty-trigger-immediate"
+        }
+      }
+    },
+    "params": {
+      "type": "object",
+      "required": ["id", "server"],
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

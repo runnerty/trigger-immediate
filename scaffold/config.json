@@ -1,0 +1,8 @@
+{
+  "triggers": [
+    {
+      "id": "immediate",
+      "type": "@runnerty-trigger-immediate"
+    }
+  ]
+}

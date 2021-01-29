@@ -1,0 +1,34 @@
+{
+  "name": "@runnerty/trigger-immediate",
+  "version": "3.0.0",
+  "description": "Runnerty module: Immediate",
+  "author": "Runnerty Tech",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.js' && prettier --check '**'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runnerty/trigger-immediate.git"
+  },
+  "keywords": [
+    "runnerty",
+    "trigger",
+    "immediate"
+  ],
+  "bugs": {
+    "url": "https://github.com/runnerty/trigger-immediate/issues"
+  },
+  "homepage": "https://github.com/runnerty/trigger-immediate#readme",
+  "dependencies": {
+    "@runnerty/module-core": "3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
