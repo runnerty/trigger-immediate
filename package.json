@@ -1,6 +1,6 @@
 {
   "name": "@runnerty/trigger-immediate",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Runnerty module: Immediate",
   "author": "Runnerty Tech",
   "license": "MIT",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/runnerty/trigger-immediate#readme",
   "dependencies": {
-    "@runnerty/module-core": "~3.0.3"
+    "@runnerty/module-core": "~3.0.4"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
