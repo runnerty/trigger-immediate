@@ -57,6 +57,17 @@ Add in [plan.json]:
   ]
 }
 ```
+```json
+{
+  "triggers": [
+    {
+      "id":"immediate",
+      "delay": "2s",
+      "times": 2
+    }
+  ]
+}
+```
 
 
 [Runnerty]: http://www.runnerty.io

@@ -1,6 +1,7 @@
 'use strict';
 
 const Trigger = require('@runnerty/module-core').Trigger;
+const ms = require('ms');
 
 class triggerImmediate extends Trigger {
   constructor(chain, params) {
@@ -19,10 +20,17 @@ class triggerImmediate extends Trigger {
       await sleep(5);
     }
 
-    try {
-      this.startChain(checkCalendar, inputValues, customValues);
-    } catch (err) {
-      this.logger.error('StartChain error (triggerImmediate):', err);
+    // Times:
+    const times = this.params.times || 1;
+    for (let i = 0; i < times; i++) {
+      // Delay
+      await sleep(ms('' + this.params.delay) || 0);
+
+      try {
+        this.startChain(checkCalendar, inputValues, customValues);
+      } catch (err) {
+        this.logger.error('StartChain error (triggerImmediate):', err);
+      }
     }
   }
 }
