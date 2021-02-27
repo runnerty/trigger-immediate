@@ -1,7 +1,10 @@
-.vscode
-api
 node_modules
-samples
-*.md
-*.json
+.eslintignore
+.gitignore
+.prettierignore
+.npmignore
 LICENSE
+*.png
+*.txt
+TODO
+.DS_Store
