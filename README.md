@@ -20,18 +20,18 @@ Through NPM
 npm i @runnerty/trigger-immediate
 ```
 
-You can also add modules to your project with [runnerty-cli]
+You can also add modules to your project with [runnerty]
 
 ```bash
-npx runnerty-cli add @runnerty/trigger-immediate
+npx runnerty add @runnerty/trigger-immediate
 ```
 
-This command installs the module in your project, adds example configuration in your `config.json`.
+This command installs the module in your project, adds example configuration in your [config.json] and creates an example plan of use.
 
-If you have installed [runnerty-cli] globally you can include the module with this command:
+If you have installed [runnerty] globally you can include the module with this command:
 
 ```bash
-rty add @runnerty/trigger-immediate
+runnerty add @runnerty/trigger-immediate
 ```
 ### Configuration:
 Add in [config.json]:
@@ -70,7 +70,7 @@ Add in [plan.json]:
 ```
 
 
-[Runnerty]: http://www.runnerty.io
+[Runnerty]: https://www.runnerty.io
 [downloads-image]: https://img.shields.io/npm/dm/@runnerty/trigger-immediate.svg
 [npm-url]: https://www.npmjs.com/package/@runnerty/trigger-immediate
 [npm-image]: https://img.shields.io/npm/v/@runnerty/trigger-immediate.svg
@@ -78,4 +78,3 @@ Add in [plan.json]:
 [david-badge-url]: https://david-dm.org/runnerty/trigger-immediate
 [config.json]: http://docs.runnerty.io/config/
 [plan.json]: http://docs.runnerty.io/plan/
-[runnerty-cli]: https://www.npmjs.com/package/runnerty-cli
